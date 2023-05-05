@@ -1,0 +1,17 @@
+.body-contact-us {
+    background: #d6eaff;
+    /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+  }
+  
+  .bg {
+    background-image: url('../img/favicon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .to-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

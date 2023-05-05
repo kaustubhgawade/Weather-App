@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- CSS file -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/contact-us.css" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Open Sky</title>
+  </head>
+  <body class="body-contact-us">
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark"
+        aria-label="Fourth navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Weather App</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="progress-bar"></div>
+    </header>
+    <main>
+      <div class="container-fluid px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6 d-none d-sm-block bg"></div>
+                  <div class="col-sm-6 p-4">
+                    <div class="text-center">
+                      <div class="h3 fw-light">Contact Form</div>
+                      <p class="mb-4 text-muted">How can we help?</p>
+                    </div>
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="Name"
+                          data-sb-validations="required"
+                        />
+                        <label for="name">Name</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="name:required"
+                        >
+                          Name is required.
+                        </div>
+                      </div>
+
+                      <!-- Email Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="emailAddress"
+                          type="email"
+                          placeholder="Email Address"
+                          data-sb-validations="required,email"
+                        />
+                        <label for="emailAddress">Email Address</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:required"
+                        >
+                          Email Address is required.
+                        </div>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:email"
+                        >
+                          Email Address Email is not valid.
+                        </div>
+                      </div>
+
+                      <!-- Message Input -->
+                      <div class="form-floating mb-3">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          type="text"
+                          placeholder="Message"
+                          style="height: 10rem"
+                          data-sb-validations="required"
+                        ></textarea>
+                        <label for="message">Message</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="message:required"
+                        >
+                          Message is required.
+                        </div>
+                      </div>
+
+                      <!-- Submit button -->
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-primary btn-lg disabled"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-2 border-top bg-dark text-white to-bottom">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 px-4">© 2022 - <span id="inc-year"></span> Kaustubh, Inc</span>
+      </div>
+    </footer>
+  </body>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</html>

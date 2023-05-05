@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../img/background.jpg); 
+  /* for more backgrounds  */
+  /* 1. ../img/bg2.jpg
+   2. ../img/bg3.jpg
+   3. ../img/bg4.jpg
+   4. ../img/bg5.jpg
+   */
+   /* paste one of this url in -> background-image value */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+}
+.dropdown-menu > li {
+  cursor: pointer;
+}
+/*--------------------------------------------------------------
+  # Weather Card
+  --------------------------------------------------------------*/
+.weather__card {
+  width: 800px;
+  padding: 40px 30px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  color: #3c4048;
+  /* opacity: 0.8; */
+}
+
+/*--------------------------------------------------------------
+  # Making weather card inner responsive
+  --------------------------------------------------------------*/
+.weather__card-inner {
+  display: flex;
+}
+@media screen and (max-width: 650px) {
+  .weather__card-inner {
+    flex-direction: column;
+  }
+}
+
+.weather__card h2 {
+  font-size: 120px;
+  font-weight: 700;
+  color: #3c4048;
+  line-height: 0.8;
+}
+.weather__card h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 0.8;
+  color: #3c4048;
+}
+.weather__card h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.1;
+  color: #9d9d9d;
+}
+.weather__card img {
+  width: 120px;
+  height: 120px;
+}
+.weather__card .weather__description {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px 13px;
+  border: 0;
+  outline: none;
+  color: #7f8487;
+  font-size: 0.956rem;
+  font-weight: 400;
+}
+/*--------------------------------------------------------------
+  # Weather Status
+  --------------------------------------------------------------*/
+.weather__status img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+.weather__status span {
+  font-weight: 500;
+  color: #3c4048;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+/*--------------------------------------------------------------
+  # Weather Forecast
+  --------------------------------------------------------------*/
+.weather__forecast img {
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+.weather__forecast span {
+  font-weight: 500;
+  color: #3c4048;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+/*--------------------------------------------------------------
+    # Cards-Values 
+    --------------------------------------------------------------*/
+.cards-value {
+  font: Roboto, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+    # futureForecast-7
+    --------------------------------------------------------------*/
+.container-futureForecast-7 {
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+}

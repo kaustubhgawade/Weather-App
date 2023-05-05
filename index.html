@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact-us.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Open Sky</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark"
+        aria-label="Fourth navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Open Sky</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Popular Cities</a
+                >
+                <ul class="dropdown-menu">
+                  <li class="mx-2 pe text-black" id="newYork">New York</li>
+                  <li class="mx-2 pe text-black" id="budapest">Budapest</li>
+                  <li class="mx-2 pe text-black" id="sydney">Sydney</li>
+                  <li class="mx-2 pe text-black" id="capeTown">Cape Town</li>
+                  <li class="mx-2 pe text-black" id="rioDeJanerio">
+                    Rio de Janerio
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="searchCity"
+              />
+              <button class="btn btn-outline-primary" type="submit" id="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="progress-bar">
+        
+      </div>
+    </header>
+    <main class="container py-3">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <!-- HEAD TEXT -->
+        <h1 class="display-4 fw-normal text-white">
+          Temperature for <span id="city">Mumbai</span> <span id="country">,India</span>
+        </h1>
+      </div>
+      <!-- Weather -->
+      <div class="container mt-5">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <div class="weather__card">
+            <div
+              class="d-flex justify-content-center align-items-center weather__card-inner"
+            >
+              <div class="p-3">
+                <h2 id="mainTemperature">84&deg;F</h2>
+              </div>
+              <div class="p-3">
+                <img src="https://svgur.com/i/oKG.svg" />
+              </div>
+              <div class="p-3">
+                <h5 id="date" class="text-black"></h5>
+                <br />
+                <h5 id="dayTime"></h5>
+                <br />
+                <h3 id="city2">Mumbai</h3>
+                <br />
+                <h4 class="weather__description" id="weatherDescription"
+                  >Fair</h4
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <!-- 3 cards section -->
+      <div class="container row py-3">
+        <div class="col-sm-4">
+          <div class="card my-4">
+            <div class="card-body">
+              <h5 class="card-title">Wind</h5>
+              <p>
+                <i class="fa-solid fa-wind"></i>
+                Chill:
+                <span class="cards-value" id="chill"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-compass"></i>
+                Direction:
+                <span class="cards-value" id="direction"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-gauge"></i>
+                Speed:
+                <span class="cards-value" id="speed"></span>
+              </p>
+              <a href="#" class="btn btn-info">Information about Wind</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card my-4">
+            <div class="card-body">
+              <h5 class="card-title">Atmosphere</h5>
+              <p>
+                <i class="fa-solid fa-droplet"></i>
+                Humidity:
+                <span class="cards-value" id="humidity"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-eye-slash"></i>
+                Visiblity:
+                <span class="cards-value" id="visibility"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-compress"></i>
+                Pressure:
+                <span class="cards-value" id="pressure"></span>
+              </p>
+              <a href="#" class="btn btn-info">Information about Atmosphere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card my-4">
+            <div class="card-body">
+              <h5 class="card-title">Astronomy</h5>
+              <p>
+                <i class="fa-solid fa-cloud-sun"></i>
+                Sunrise:
+                <span class="cards-value" id="sunrise"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-cloud-moon"></i>
+                Sunset:
+                <span class="cards-value" id="sunset"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-globe"></i>
+                Timezone:
+                <span class="cards-value" id="timezone"></span>
+              </p>
+              <a href="#" class="btn btn-info">Information about Astronomy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <!-- 7 Day Forecast -->
+      <div class="container-futureForecast-7">
+        <h2 class="display-6 text-center fw-bolder mb-4 futureForecast-7">
+          7 Days Forecast
+        </h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%"></th>
+                <!-- <th style="width: 22%">Date</th> -->
+                <th style="width: 22%">Feels Like</th>
+                <th style="width: 22%">High Temperature</th>
+                <th style="width: 22%">Low Temperature</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay1">...</span>
+                </th>
+                <td id="dailyForecastText1"></td>
+                <td id="dailyForecastHigh1"></td>
+                <td id="dailyForecastLow1"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay2">...</span>
+                </th>
+                <td id="dailyForecastText2"></td>
+                <td id="dailyForecastHigh2"></td>
+                <td id="dailyForecastLow2"></td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay3">...</span>
+                </th>
+                <td id="dailyForecastText3"></td>
+                <td id="dailyForecastHigh3"></td>
+                <td id="dailyForecastLow3"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay4">...</span>
+                </th>
+                <td id="dailyForecastText4"></td>
+                <td id="dailyForecastHigh4"></td>
+                <td id="dailyForecastLow4"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay5">...</span>
+                </th>
+                <td id="dailyForecastText5"></td>
+                <td id="dailyForecastHigh5"></td>
+                <td id="dailyForecastLow5"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay6">...</span>
+                </th>
+                <td id="dailyForecastText6"></td>
+                <td id="dailyForecastHigh6"></td>
+                <td id="dailyForecastLow6"></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">
+                  <span id="dailyForecastDay7">...</span>
+                </th>
+                <td id="dailyForecastText7"></td>
+                <td id="dailyForecastHigh7"></td>
+                <td id="dailyForecastLow7"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer class="py-2 border-top bg-dark text-white">
+      <div class="col-md-4 d-flex align-items-center ">
+        <span class="mb-3 mb-md-0 px-4">© 2022 - <span id="inc-year"></span> Kaustubh, Inc</span>
+      </div>
+    </footer>
+  </body>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script type="module" src="js/weatherApi.js"></script> -->
+  <script src="js/script.js"></script>
+</html>
